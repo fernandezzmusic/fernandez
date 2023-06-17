@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 var feed = new Instafeed({
-    accessToken: process.env.TKN,
+    accessToken: 'IGQVJWMXlWNXZAMT0hBSkNWQTNTNVo3RGg2YXNjUTV5ZA0FOMUN5NnpsTFRQYnpSY3VobnpBaTh4dEMzaS1zM282cXNfRDRDV2dnRzByMHRtNEh6dTRZASXFrSnpuU0ltbFlCQm5PZAHJRajhEeWV5dHB4cQZDZD',
     template: '<div class="col-lg-4 gallery instaimg"><a href="{{link}}" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
     limit: 3
   });
