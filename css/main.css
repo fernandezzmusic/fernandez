@@ -2276,6 +2276,8 @@ body {
           align-items: center;
   -webkit-animation: rotate 2s infinite;
           animation: rotate 2s infinite;
+  
+  
 }
 
 .main-circle:before {
@@ -2336,6 +2338,9 @@ body {
   -webkit-transform: rotate(-20deg);
           transform: rotate(-20deg);
   border-radius: 50%;
+  -moz-animation: sumir 2s infinite .6s;;
+  -webkit-animation: sumir 2s infinite .6s;
+          animation: sumir 2s infinite .6s;
 }
 
 @-webkit-keyframes rotate {
@@ -2356,6 +2361,35 @@ body {
   }
 }
 
+@keyframes sumir{
+  from{
+    opacity: 100%;
+  }
+  to
+  {
+    opacity: 0%;
+  }
+}
+@-webkit-keyframes sumir
+{
+  from{
+    opacity: 100%;
+  }
+  to
+  {
+    opacity: 0%;
+  }
+}
+@-moz-keyframes sumir
+{
+  from{
+    opacity: 100%;
+  }
+  to
+  {
+    opacity: 0%;
+  }
+}
 /*-------------------------------------------------------------------------------
   3. Header
 -------------------------------------------------------------------------------*/

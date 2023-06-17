@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     
 
-    setTimeout(disabledPreloader, 1200);
+    setTimeout(disabledPreloader, 600);
 
     $("a.fancybox").fancybox({
         type: 'iframe',
