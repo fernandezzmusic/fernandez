@@ -264,6 +264,16 @@ body {
   background-repeat: no-repeat;
 }
 
+.section-upcoming {
+  box-shadow: inset 0px 0px 500px 500px #000000e5;
+  background-image: url("../img/upcoming/bg.gif");
+  background-size: cover;
+  background-position: 100% 35%;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+}
+
+
 .section-blog {
   background-image: url("../img/bg/blog.jpg");
   background-size: cover;
@@ -286,6 +296,12 @@ body {
   background-color: #1F1F1F;
   opacity: 0.3;
   z-index: 1;
+}
+
+#instagramicon
+{
+  margin: 20px;
+  margin-left: 0 !important;
 }
 
 .home__row {

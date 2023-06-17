@@ -175,8 +175,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 window.removeEventListener('scroll', onScroll)
             }
 
-            const anchors = ['home', 'cases', 'about', 'awards', 'testimonials', 'blog', 'contacts']
-            const labels = ['Início', 'Últimos Lançamentos', 'Sobre mim', 'Gêneros', 'Testemunhos', 'Galeria', 'Contato']
+            const anchors = ['home', 'cases', 'about', 'awards', 'upcoming', 'testimonials', 'blog', 'contacts']
+            const labels = ['Início', 'Últimos Lançamentos', 'Sobre mim', 'Gêneros', 'Em Breve', 'Testemunhos', 'Galeria', 'Contato']
 
             function setLabel(index) {
                 const label = labels[index];
