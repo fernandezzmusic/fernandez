@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             const anchors = ['home', 'cases', 'about', 'awards', 'testimonials', 'blog', 'contacts']
-            const labels = ['Início', 'Últimos Lançamentos', 'Sobre mim', 'Gêneros', 'Testemunhos', 'Postagens', 'Contato']
+            const labels = ['Início', 'Últimos Lançamentos', 'Sobre mim', 'Gêneros', 'Testemunhos', 'Galeria', 'Contato']
 
             function setLabel(index) {
                 const label = labels[index];
