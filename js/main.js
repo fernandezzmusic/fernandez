@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 window.removeEventListener('scroll', onScroll)
             }
 
-            const anchors = ['home', 'cases', 'about', 'awards', 'upcoming', 'testimonials', 'blog', 'contacts']
+            const anchors = ['home', 'cases', 'about', 'genres', 'upcoming', 'testimonials', 'gallery', 'contacts']
             const labels = ['Início', 'Últimos Lançamentos', 'Sobre mim', 'Gêneros', 'Em Breve', 'Testemunhos', 'Galeria', 'Contato']
 
             function setLabel(index) {
@@ -344,3 +344,6 @@ var feed = new Instafeed({
     limit: 3
   });
   feed.run()
+
+
+  document.getElementById('home').scrollIntoView(true);

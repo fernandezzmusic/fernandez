@@ -257,7 +257,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.section-awards {
+.section-genres {
   background-image: url("../img/bg/awards.jpg");
   background-size: cover;
   background-position: 100% 22%;
@@ -274,7 +274,7 @@ body {
 }
 
 
-.section-blog {
+.section-gallery {
   background-image: url("../img/bg/blog.jpg");
   background-size: cover;
   background-position: center;
