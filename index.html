@@ -8,9 +8,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script type="text/javascript" src="node_modules/instafeed.js/dist/instafeed.min.js"></script>
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link href="css/main.css" rel="stylesheet">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
     <main class="main">
@@ -18,7 +20,7 @@
         <div class="header__wrapper">
           <div class="header__left-inner">
             <div class="header__logo-wrapper">
-              <div class="header__logo"><img src="img/logo.png" width="120px">></div>
+              <div class="header__logo"><img src="img/logo.png" width="120px"><p class="text-white">></p></div>
             </div>
           </div>
           <div class="header__right-inner">
@@ -39,7 +41,7 @@
                   <li class="header__menu-item" data-menuanchor="lancamentos"><a class="header__menu-link" href="#cases">Lançamentos</a></li>
                   <li class="header__menu-item" data-menuanchor="sobre"><a class="header__menu-link" href="#about">Sobre mim</a></li>
                   <li class="header__menu-item" data-menuanchor="generos"><a class="header__menu-link" href="#awards">Gêneros</a></li>
-                  <li class="header__menu-item" data-menuanchor="testemunhos"><a class="header__menu-link" href="#testimonials">Testimonials</a></li>
+                  <li class="header__menu-item" data-menuanchor="testemunhos"><a class="header__menu-link" href="#testimonials">Testemunhos</a></li>
                   <li class="header__menu-item" data-menuanchor="posts"><a class="header__menu-link" href="#blog">Posts</a></li>
                   <li class="header__menu-item" data-menuanchor="contato"><a class="header__menu-link" href="#contacts">Contato</a></li>
                 </ul>
@@ -132,7 +134,7 @@
                   Bom, me chamando para seu evento, eu com certeza irei entregar o esperado preenchendo a alma de todos. Posso tocar o que precisar, mas meu foco é o House.</div>
                 </div>
                 <div class="about__img-wrapper"> 
-                  <!-- Open popup button with video--><a class="about__video popupbox-video fancybox iframe" href="https://www.youtube.com/watch?v=9McxypsPNNA&ab_channel=FullF1ll" target="1" rel="group"><img class="about__img-play" src="img/about/play.svg" alt="img"></a><img class="about__img" src="img/about/img.jpg" alt="img">
+                  <!-- Open popup button with video--><a href="https://www.youtube.com/watch?v=9McxypsPNNA&ab_channel=FullF1ll" target="1" rel="group"><img class="about__img-play" src="img/about/play.svg" alt="img"></a><img class="about__img" src="img/about/img.jpg" alt="img">
                 </div>
               </div>
             </div>
@@ -325,7 +327,12 @@
           <div class="section-main blog js-section" id="blog">
             <div class="container-main blog__container">
               <div class="blog__title">Atualizações</div>
-              <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/346d39bd9417583abb8a6a81f91070dc.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+              
+
+                <div id="instafeed" class="row"></div>
+
+              
+
             </div>
           </div>
         </div>

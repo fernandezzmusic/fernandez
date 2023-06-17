@@ -2954,3 +2954,26 @@ body {
 {
   margin-top: 50px;
 }
+
+#instafeed
+{
+  margin-top:80px;
+}
+
+.instaimg:hover
+{
+  opacity:0.8;
+  -moz-opacity:0.8;
+  -webkit-opacity:0.8;
+  
+}
+
+a {
+  color:#ffffff !important;
+  text-decoration:none !important;
+  }
+
+.section
+{
+  color: #ffffff;
+}
