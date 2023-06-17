@@ -2389,9 +2389,9 @@ body {
 }
 #preloader
 {
-  -moz-animation: sumir 2s infinite .6s;;
-  -webkit-animation: sumir 2s infinite .6s;
-          animation: sumir 2s infinite .6s;
+  -moz-animation: sumir 2s forwards .6s;;
+  -webkit-animation: sumir 2s forwards .6s;
+          animation: sumir 2s forwards .6s;
 }
 /*-------------------------------------------------------------------------------
   3. Header
