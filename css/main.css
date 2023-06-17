@@ -2338,9 +2338,6 @@ body {
   -webkit-transform: rotate(-20deg);
           transform: rotate(-20deg);
   border-radius: 50%;
-  -moz-animation: sumir 2s infinite .6s;;
-  -webkit-animation: sumir 2s infinite .6s;
-          animation: sumir 2s infinite .6s;
 }
 
 @-webkit-keyframes rotate {
@@ -2363,32 +2360,38 @@ body {
 
 @keyframes sumir{
   from{
-    opacity: 100%;
+    opacity: 100;
   }
   to
   {
-    opacity: 0%;
+    opacity: 0;
   }
 }
 @-webkit-keyframes sumir
 {
   from{
-    opacity: 100%;
+    opacity: 100;
   }
   to
   {
-    opacity: 0%;
+    opacity: 0;
   }
 }
 @-moz-keyframes sumir
 {
   from{
-    opacity: 100%;
+    opacity: 100;
   }
   to
   {
-    opacity: 0%;
+    opacity: 0;
   }
+}
+#preloader
+{
+  -moz-animation: sumir 2s infinite .6s;;
+  -webkit-animation: sumir 2s infinite .6s;
+          animation: sumir 2s infinite .6s;
 }
 /*-------------------------------------------------------------------------------
   3. Header
