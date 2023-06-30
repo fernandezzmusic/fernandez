@@ -338,12 +338,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
-var feed = new Instafeed({
-    accessToken: 'IGQVJWMXlWNXZAMT0hBSkNWQTNTNVo3RGg2YXNjUTV5ZA0FOMUN5NnpsTFRQYnpSY3VobnpBaTh4dEMzaS1zM282cXNfRDRDV2dnRzByMHRtNEh6dTRZASXFrSnpuU0ltbFlCQm5PZAHJRajhEeWV5dHB4cQZDZD',
-    template: '<div class="col-lg-4 gallery instaimg"><a href="{{link}}" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
-    limit: 3
-  });
-  feed.run()
+
+function checkTime(tempo)
+{
+    if(tempo == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
 
 
-  document.getElementById('home').scrollIntoView(true);
+
+var tutu = document.getElementById("tutu");
+  function playaudiotutu() {
+    checkTime(tutu.currentTime);
+    tutu.play();
+    trumpet.pause()
+    trumpet.currentTime = 0;
+  }
+  function pauseaudiotutu() {
+      tutu.pause();
+  }
+
+var trumpet = document.getElementById("trumpet");
+function playaudiotrumpet() {
+    checkTime(trumpet.currentTime);
+    trumpet.play();
+    tutu.pause()
+    tutu.currentTime = 0;
+}
+function pauseaudiotrumpet() {
+    trumpet.pause();
+}
