@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+
 /* 2. Cases */
 document.addEventListener('DOMContentLoaded', () => {
     if (document.querySelector('.js-cases-row')) {

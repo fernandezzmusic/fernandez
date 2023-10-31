@@ -385,7 +385,67 @@
               <div class="blog__title">Galeria</div>
               <span>Precisa de uma foto minha para utilizar em alguma arte? Tá na mão!</span>
               
-              <iframe id="gdrive" src="https://drive.google.com/embeddedfolderview?id=1BQ5sPVMuuafLKTie_FqtwYh2X-HERkX5#list" style="width:70%; height:400px; border:0;"></iframe>
+              <div class="gallery-container">
+                <div class="gallery">
+                    <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1sv4PHoy4qwzULppW5yVikYRqHZis-fK9/view?usp=drive_link"><img src="img/galeria/img1.png" alt="Imagem 1"></a>
+                </div>
+                <div class="gallery">
+                    <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/177QI3VcWlRq6Si1A-Pp5sziWmFV2-9B9/view?usp=drive_link"><img src="img/galeria/img2.png" alt="Imagem 2"></a>
+                </div>
+                <div class="gallery">
+                    <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1aEl4zbREmhd7ZIHu2ZhDauYs4bM2pcQI/view?usp=drive_link"><img src="img/galeria/img3.png" alt="Imagem 3"></a>
+                </div>
+                <div class="gallery">
+                  <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1OnBp--NhXiM2uTApht49Adp41KZnS0kd/view?usp=drive_link"><img src="img/galeria/img4.png" alt="Imagem 4" ></a>
+              </div>
+                <!-- Adicione mais imagens aqui -->
+            </div>
+            <script>
+              let galleryContainer = document.getElementById("gallery-container");
+              let isDragging = false;
+              let startPosition = 0;
+              let currentTranslate = 0;
+              let prevTranslate = 0;
+      
+              galleryContainer.addEventListener("mousedown", (e) => {
+                  isDragging = true;
+                  startPosition = e.pageX - galleryContainer.offsetLeft;
+                  prevTranslate = currentTranslate;
+              });
+      
+              galleryContainer.addEventListener("mousemove", (e) => {
+                  if (isDragging) {
+                      const currentPosition = e.pageX - galleryContainer.offsetLeft;
+                      currentTranslate = currentPosition - startPosition;
+                      setGalleryPosition();
+                  }
+              });
+      
+              galleryContainer.addEventListener("mouseup", () => {
+                  isDragging = false;
+                  checkBoundaries();
+              });
+      
+              galleryContainer.addEventListener("mouseleave", () => {
+                  isDragging = false;
+                  checkBoundaries();
+              });
+      
+              function setGalleryPosition() {
+                  galleryContainer.style.transform = `translateX(${currentTranslate}px)`;
+              }
+      
+              function checkBoundaries() {
+                  const galleryWidth = galleryContainer.scrollWidth;
+                  if (currentTranslate > 0) {
+                      currentTranslate = 0;
+                  } else if (currentTranslate < -galleryWidth + window.innerWidth) {
+                      currentTranslate = -galleryWidth + window.innerWidth;
+                  }
+                  setGalleryPosition();
+              }
+          </script>
+              
 
 
               <!--<div class="row mt-5">

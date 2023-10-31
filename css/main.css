@@ -47,6 +47,7 @@
 body {
   background: #000;
   color: #F3F3F3;
+  user-select: none
 }
 
 .section {
@@ -284,6 +285,36 @@ body {
 /* 2.12 Home */
 .home {
   position: relative;
+}
+
+.gallery-container {
+  display: flex;
+  white-space: nowrap;
+  gap: 90px;
+  padding:50px;
+  background-color: rgb(255, 255, 255, 0.1);
+  border-radius: 50px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.gallery {
+  flex-shrink: 0;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.gallery img {
+  max-width: 400px;
+  height: auto;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255, 0.1);
+  border-radius: 50px;
+}
+
+.gallery img:hover{
+  background-color: rgb(255, 255, 255, 0.5);
+  transition: 1s;
 }
 
 .home::after {
