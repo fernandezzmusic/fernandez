@@ -211,7 +211,7 @@ body {
 .section-home {
   background-image: url("../img/bg/home.jpg");
   background-size: cover;
-  background-position: 100% 80%;
+  background-position: 100% 45%;
   background-repeat: no-repeat;
 }
 
@@ -223,9 +223,9 @@ body {
 }
 
 .section-cases {
-  background-image: url("../img/bg/partners.jpg");
+  background-image: url("../img/bg/home.jpg");
   background-size: cover;
-  background-position: 100% 22%;
+  background-position: 100% 90%;
   background-repeat: no-repeat;
 }
 
